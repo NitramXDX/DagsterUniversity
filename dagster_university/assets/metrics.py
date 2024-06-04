@@ -96,6 +96,8 @@ def trips_by_week() -> None:
 
         current_date += timedelta(days=7)
 
+    conn.close()
+
     # clean up the formatting of the dataframe
     result['num_trips'] = result['num_trips'].astype(int)
     result['passenger_count'] = result['passenger_count'].astype(int)
