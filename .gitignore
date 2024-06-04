@@ -1,0 +1,5 @@
+/data/*/*.parquet
+/data/*/*.csv
+/data/*/*.png
+/data/*/*.duckdb
+/data/*/*.geojson
