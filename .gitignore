@@ -1,5 +1,9 @@
-/data/*/*.parquet
-/data/*/*.csv
-/data/*/*.png
-/data/*/*.duckdb
-/data/*/*.geojson
+/data/**/*.parquet
+/data/**/*.csv
+/data/**/*.png
+/data/**/*.duckdb
+/data/**/*.geojson
+
+**/__pycache__/**
+
+/tmp*
