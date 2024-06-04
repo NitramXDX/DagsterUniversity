@@ -2,9 +2,17 @@
     "name": "Dagster Essentials",
     "build": {
         "dockerfile": "./Dockerfile",
-        "args": {
-            "DUCKDB_DATABASE": "data/staging/data.duckdb"
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "bash",
+                "terminal.integrated.profiles.linux": { "zsh": { "path": "/bin/bash" } }
+            }
         }
+    },
+    "containerEnv": {
+        "DUCKDB_DATABASE": "data/staging/data.duckdb"
     },
     "forwardPorts": [3000],
     "postCreateCommand": "pip install -e '.[dev]'",
