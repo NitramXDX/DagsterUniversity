@@ -8,7 +8,10 @@
             "settings": {
                 "terminal.integrated.defaultProfile.linux": "bash",
                 "terminal.integrated.profiles.linux": { "zsh": { "path": "/bin/bash" } }
-            }
+            },
+            "extensions": [
+				"ms-python.python"
+			]
         }
     },
     "containerEnv": {
